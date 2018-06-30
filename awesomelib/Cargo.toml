@@ -1,0 +1,15 @@
+[package]
+name = "awesomelib"
+version = "0.1.0"
+authors = ["Wesley Batista <wesley.batista.santos@gmail.com>"]
+
+[lib]
+name = "awesome"
+crate-type = ["dylib"]
+
+[dependencies.cpython]
+version = "0.1"
+# features = ["extension-module"]
+## uncomment the above and comment the bellow lines to switch to python 3
+default-features = false
+features = ["extension-module-2-7", "python27-sys"]
